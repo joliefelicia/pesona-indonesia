@@ -301,7 +301,7 @@ $jumlahdestinasi=mysqli_num_rows($sqldestinasi);
             <h3>Galeri</h3>
           </div>
         </div>
-  <div class="row justify-content-center">
+  <div class="row content-center">
     <?php  
        $bataspage=6;
        $page = isset($_GET['page'])?(int)$_GET['page'] : 1;
@@ -316,7 +316,7 @@ $jumlahdestinasi=mysqli_num_rows($sqldestinasi);
     while($row=mysqli_fetch_array($foto)) {?>
     <div class="col-md-4 mb-4">
   <div class="card">
-  <img src="images/<?php echo $row['fotofile'] ?>" class="gallery-img" alt="A generic square placeholder image with rounded corners in a figure.">
+  <img src="images/<?php echo $row['fotofile'] ?>" class="gallery-img img-fuid" alt="A generic square placeholder image with rounded corners in a figure.">
     <div class="card-body">
         <p class="card-text"><?php echo $row['fotonama'] ?></p>
     </div>

@@ -107,6 +107,7 @@ $guesthouse=mysqli_query($connection,"select * from guesthouse where  areaID='id
         text-align: center;
       }
 
+     
 
 
     </style>
@@ -213,7 +214,7 @@ $guesthouse=mysqli_query($connection,"select * from guesthouse where  areaID='id
   
   <div class="row content-center">
   <div class="col-md">
-    <h1>Hotel</h1>
+    <h1 class="mt-3">Hotel</h1>
    
   <?php if (mysqli_num_rows($hotel)>0){
  while($row4=mysqli_fetch_array($hotel))
@@ -233,7 +234,8 @@ $guesthouse=mysqli_query($connection,"select * from guesthouse where  areaID='id
  <?php } } ?>
 
   </div>
-  <div class="col-md-5">     <h1>Villa</h1>
+  <div class="col-md-5">     
+    <h1 class="mt-3">Villa</h1>
    
   <?php if (mysqli_num_rows($villa)>0){
   while($row3=mysqli_fetch_array($villa))
@@ -253,7 +255,7 @@ $guesthouse=mysqli_query($connection,"select * from guesthouse where  areaID='id
 <?php } } ?></div>
 
 <div class="col-md">    
-   <h1>Guest House</h1>
+   <h1 class="mt-3">Guest House</h1>
    
   <?php if (mysqli_num_rows($guesthouse)>0){
 while($row4=mysqli_fetch_array($guesthouse))
